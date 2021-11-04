@@ -13,6 +13,7 @@ import undraw_develop_app_re_bi4i from "./assets/undraw_develop_app_re_bi4i.svg"
 import undraw_videographer_nnc7 from "./assets/undraw_videographer_nnc7.svg";
 import undraw_photo_session_clqr from "./assets/undraw_photo_session_clqr.svg";
 import undraw_mic_drop_uuyg from "./assets/undraw_mic_drop_uuyg.svg";
+import screenshot_myjumpdata from "./assets/screenshot_myjumpdata.jpg";
 
 export default function App() {
   const [scroll, setScroll] = useState(false);
@@ -116,8 +117,46 @@ export default function App() {
           />
         </div>
       </Section>
+      <Section heading="Was sind meine Erfahrungen?">
+        <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 pt-10 md:pt-12">
+          <ProjectBox
+            name="myJumpData"
+            img={screenshot_myjumpdata}
+            link="https://myjumpdata.fediv.me"
+          />
+        </div>
+      </Section>
     </div>
   );
+  function ProjectBox({
+    name,
+    img,
+    link,
+  }: {
+    name: string;
+    img: any;
+    link: string;
+  }) {
+    return (
+      <div className="shadow rounded-lg relative group">
+        <div className="block">
+          <img src={img} alt={"Grafik " + name} className="rounded-lg" />
+        </div>
+        <div className="text-center z-10 opacity-0 group-hover:opacity-100 bg-yellow-400 bg-opacity-75 absolute w-full h-full flex flex-col top-0 justify-center transition duration-1000 ease-in-out space-y-8">
+          <h3 className="font-bold text-2xl lg:text-4xl text-white uppercase">
+            {name}
+          </h3>
+          <a
+            href={link}
+            className="py-2 px-4 text-black bg-white rounded mx-auto underline"
+            target="_blank"
+          >
+            Ansehen
+          </a>
+        </div>
+      </div>
+    );
+  }
   function SkillBox({ name, text, img }: any) {
     return (
       <div className="shadow px-8 py-12 hover:bg-yellow-400 transition duration-1000 ease-in-out rounded-lg group flex flex-col justify-between">
