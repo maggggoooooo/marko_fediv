@@ -126,6 +126,12 @@ export default function App() {
           />
         </div>
       </Section>
+      <Seperator rotated />
+      <footer className="w-full">
+        <div className="w-full container flex flex-wrap items-center justify-between mx-auto mt-0 py-2 px-4">
+          <div className="font-bold">&copy; Marko Fediv 2021</div>
+        </div>
+      </footer>
     </div>
   );
   function ProjectBox({
