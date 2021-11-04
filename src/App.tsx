@@ -62,7 +62,7 @@ export default function App() {
                 <span className="text-sm">Lass uns Kontakt aufnehmen</span>
                 <FaChevronRight className="h-4 inline fill-current" />
               </div>
-              <a href="instagram.com/maggggoooooo">
+              <a href="https://instagram.com/maggggoooooo">
                 <FaInstagram className="-mt-2 h-8 w-8 inline fill-current" />
               </a>
               <a href="mailto:marko.fediv@gmail.com">
