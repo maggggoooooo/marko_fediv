@@ -150,6 +150,7 @@ export default function App() {
             href={link}
             className="py-2 px-4 text-black bg-white rounded mx-auto underline"
             target="_blank"
+            rel="noreferrer"
           >
             Ansehen
           </a>
