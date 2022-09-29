@@ -1,0 +1,18 @@
+{
+  "name": "Marko Fediv Homepage",
+  "short_name": "Marko Fediv",
+  "dir": "ltr",
+  "lang": "de-DE",
+  "orientation": "any",
+  "start_url": ".",
+  "background_color": "#fa0",
+  "theme_color": "#fff",
+  "display": "standalone",
+  "description": "Homepage von Marko Fediv",
+  "icons": [
+    {
+      "src": "/android-icon-192x192.png",
+      "sizes": "192x192"
+    }
+  ]
+}
